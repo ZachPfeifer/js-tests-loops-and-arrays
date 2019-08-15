@@ -4,6 +4,9 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    arr.shift();
+    arr.push('This');
+    return arr;
 }
 
 
@@ -16,6 +19,8 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    return Math.max(...arr);
+    arr.filter(largestNum());
 }
 
 
@@ -28,6 +33,11 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    //I C FE
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i] * arr.length;
+    }
+    return arr;
 }
 
 
@@ -42,7 +52,28 @@ function elemsTimesLength(arr) {
 
 function arrayFlattener(arr) {
 
+    let outPut = []
+    arr = arr.flat(Infinity)
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof elem != "object") {
+            // something 
+        } else {
+
+        }
+    }
+    return outPut
+
+
+    // if (typeof elem != "object")
+
+    //return arr.flat(2);
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     arr.flat(2);
+    // }
+    // return arr
 }
+//.flat()
 
 
 // ------------------------------------------
