@@ -20,7 +20,7 @@ function rearranger(arr) {
 
 function largestNum(arr) {
     return Math.max(...arr);
-    arr.filter(largestNum());
+    arr.filter();
 }
 
 
@@ -56,12 +56,14 @@ function arrayFlattener(arr) {
     arr = arr.flat(Infinity)
     for (let i = 0; i < arr.length; i++) {
         if (typeof elem != "object") {
-            // something 
+            outPut.push(elem)
+            //Wrong?
         } else {
-
+            //something
         }
+
+        return outPut
     }
-    return outPut
 
 
     // if (typeof elem != "object")

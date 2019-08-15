@@ -4,7 +4,11 @@
 // output: 20
 
 function rangeTotal(n1, n2) {
+  return (n2 - n1 + 1) * (n2 + n1) / 2;
 
+}
+function sumAll(arr) {
+  return rangeTotal(Math.n1(...arr), Math.n2(...arr));
 }
 
 
@@ -19,7 +23,17 @@ function rangeTotal(n1, n2) {
 // 1*2*3*4 = 24
 
 function factorials(num) {
+  var factorial = 1;
 
+  for (var i = 1; i <= num; i++) {
+    // multiply each number between 1 and num  
+    // factorial = 1 * 1 = 1
+    // factorial = 1 * 2 = 2
+    // factorial = 2 * 3 = 6
+    // factorial = 6 * 4 = 24
+    factorial = factorial * i;
+  }
+  return factorial;
 }
 
 
